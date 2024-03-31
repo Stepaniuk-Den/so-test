@@ -1,0 +1,33 @@
+.container {
+    max-width: $mobile;
+    padding: 0 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.wrapper {
+    display: flex;
+    // flex-direction: column-reverse;
+}
+
+@media screen and (min-width: $tablet) {
+    .container {
+        max-width: $tablet;
+        padding: 0 32px;
+    }
+    .main {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .container {
+        max-width: $desktop;
+        padding: 0 135px;
+    }
+    .wrapper {
+        // flex-direction: row-reverse;
+    }
+    .main {
+        width: 996px;
+    }
+}

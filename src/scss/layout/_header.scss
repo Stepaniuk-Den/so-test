@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    width: 100%;
+    height: 102px;
+    outline: 1px solid red;
+
+    .header__logo {
+        &--wrapper {
+            width: 70px;
+            height: 43px;
+            color: var(--logo-text);
+        }
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        margin-left: 330px;
+        &--list {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 60px;
+            font-family: 'TTHoves 400', sans-serif;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+    }
+}

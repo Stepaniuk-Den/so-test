@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'TTHoves 300';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local('TTHoves 300'),
+        url('/src/fonts/TTHoves-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TTHoves 400';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('TTHoves 400'),
+        url('/src/fonts/TTHoves-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TTHoves 500';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: local('TTHoves 500'),
+        url('/src/fonts/TTHoves-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TTHoves 700';
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: local('TTHoves 700'),
+        url('/src/fonts/TTHoves-Bold.woff') format('woff');
+}
