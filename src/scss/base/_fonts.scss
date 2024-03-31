@@ -33,3 +33,11 @@
     src: local('TTHoves 700'),
         url('/src/fonts/TTHoves-Bold.woff') format('woff');
 }
+@font-face {
+    font-family: 'TTHoves 900';
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: local('TTHoves 900'),
+        url('/src/fonts/TTHoves-ExtraBold.woff2') format('woff');
+}

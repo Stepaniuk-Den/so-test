@@ -1,0 +1,63 @@
+.about {
+    margin-top: 120px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 435px;
+        gap: 30px;
+
+        padding: 30px 70px 30px 100px;
+        background: #fbfbfb;
+    }
+
+    &__images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-grow: 1;
+
+        .about-1 {
+            width: 270px;
+            height: 265px;
+        }
+        .about-2 {
+            width: 270px;
+            height: 345px;
+        }
+        .about-3 {
+            position: relative;
+            transform: translateY(-80px);
+            width: 270px;
+            height: 140px;
+        }
+    }
+
+    &__descriptions {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: 'TTHoves 300';
+
+        p {
+            font-size: 16px;
+            line-height: 125%;
+            color: #000;
+            width: 400px;
+        }
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 221px;
+            height: 71px;
+            gap: 12px;
+            background: var(--bg-color);
+            color: var(--primary-color);
+            svg {
+                stroke: var(--primary-color);
+            }
+        }
+    }
+}

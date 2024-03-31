@@ -23,6 +23,14 @@
     .container {
         max-width: $desktop;
         padding: 0 135px;
+
+        h2 {
+            font-family: 'TTHoves 300', sans-serif;
+            font-weight: normal;
+            font-size: 64px;
+            line-height: 100%;
+            color: var(--other-text-color);
+        }
     }
     .wrapper {
         // flex-direction: row-reverse;
