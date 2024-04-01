@@ -27,16 +27,22 @@
             </a>
             <nav class="header__nav">
                 <ul class="header__nav--list">
-                    <li><a href="#">ГЛАВНАЯ</a></li>
-                    <li><a href="#">ГАЛЕРЕЯ</a></li>
-                    <li><a href="#">ПРОЕКТЫ</a></li>
+                    <li>
+                        <a class="js-header-nav-active" href="./index.html"
+                            >ГЛАВНАЯ</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#gallery">ГАЛЕРЕЯ</a>
+                    </li>
+                    <li><a href="#projects">ПРОЕКТЫ</a></li>
                     <li><a href="#">СЕРТИФИКАТЫ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="hero container">
+            <section class="hero container" id="gallery">
                 <div class="hero__title">
                     <h1><span>PROJECT</span>HOME</h1>
                     <div class="hero__title--buttons">
@@ -136,7 +142,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="projects container">
+            <section class="projects container" id="projects">
                 <h2>Наши проекты</h2>
                 <div class="projects__images">
                     <div class="projects__images--wrapper project-1">
@@ -162,7 +168,7 @@
                     </svg>
                 </button>
             </section>
-            <section class="contacts container">
+            <section class="contacts container" id="contacts">
                 <h2>Связаться с нами</h2>
                 <div class="contacts__wrapper">
                     <div>
@@ -209,7 +215,103 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer class="footer container">
+            <div class="footer--wrapper">
+                <div class="footer__logo">
+                    <img src="./src/img/dp-logo.svg" alt="logo" />
+                </div>
+                <div class="footer__info">
+                    <h3>Информация</h3>
+                    <ul class="footer__info--list">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h3>Контакты</h3>
+                    <ul class="footer__contact--list">
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16">
+                                    <use
+                                        xlink:href="./src/img/icons.svg#location"
+                                    ></use>
+                                </svg>
+                                100000, Республика Казахстан, <br />
+                                г. Караганда, ул. Телевизионная 10
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16">
+                                    <use
+                                        xlink:href="./src/img/icons.svg#phone"
+                                    ></use>
+                                </svg>
+                                +38 (000) 000 00 00
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="16" height="16">
+                                    <use
+                                        xlink:href="./src/img/icons.svg#mail"
+                                    ></use>
+                                </svg>
+                                mail@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3>Социальные сети</h3>
+                    <ul class="footer__social--list">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <svg width="22" height="22">
+                                    <use
+                                        xlink:href="./src/img/icons.svg#facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/">
+                                <svg width="22" height="22">
+                                    <use
+                                        xlink:href="./src/img/icons.svg#twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/">
+                                <svg width="22" height="22">
+                                    <use
+                                        xlink:href="./src/img/icons.svg#linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com/">
+                                <svg width="22" height="22">
+                                    <use
+                                        xlink:href="./src/img/icons.svg#pininterest"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">
+                © 2019 Digital Project. Все права защищены.
+            </p>
+        </footer>
         <script type="module" src="./src/js/main.js"></script>
     </body>
 </html>

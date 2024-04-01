@@ -1,7 +1,6 @@
 .header {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     width: 100%;
     height: 102px;
 
@@ -9,7 +8,7 @@
         &--wrapper {
             width: 70px;
             height: 43px;
-            color: var(--logo-text);
+            color: var(--primary-color);
         }
     }
 
@@ -17,6 +16,7 @@
         display: flex;
         align-items: center;
         margin-left: 330px;
+
         &--list {
             display: flex;
             flex-direction: row;
@@ -27,6 +27,40 @@
             line-height: 100%;
             letter-spacing: 0.2em;
             text-transform: uppercase;
+
+            a {
+                transition: all 300ms ease-in-out;
+                &:hover,
+                :focus {
+                    color: var(--button-accent-color);
+                }
+            }
+
+            .js-header-nav-active {
+                position: relative;
+                color: var(--button-accent-color);
+                &::before {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--primary-color);
+                }
+
+                &::after {
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--primary-color);
+                }
+            }
         }
     }
 }

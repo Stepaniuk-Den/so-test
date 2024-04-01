@@ -38,7 +38,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        font-family: 'TTHoves 300';
+        font-family: 'TTHoves 300', sans-serif;
 
         p {
             font-size: 16px;
@@ -55,7 +55,25 @@
             gap: 12px;
             background: var(--bg-color);
             color: var(--primary-color);
+            transition: all 300ms ease-in-out;
+
+            &:active {
+                scale: 0.9;
+            }
+
+            &:hover,
+            :focus {
+                background-color: var(--button-accent-color);
+                color: var(--bg-color);
+
+                svg {
+                    stroke: var(--bg-color);
+                    scale: 2;
+                    transform: translateX(5px);
+                }
+            }
             svg {
+                transition: all 300ms ease-in-out;
                 stroke: var(--primary-color);
             }
         }

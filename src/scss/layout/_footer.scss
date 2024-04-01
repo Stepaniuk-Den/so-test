@@ -1,0 +1,113 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    color: var(--bg-color);
+    background: var(--footer-bg-color);
+
+    h3 {
+        font-family: 'TTHoves 700', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 193px;
+        font-family: 'TTHoves 500', sans-serif;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+    }
+
+    &--wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 58px 0;
+    }
+
+    &__logo {
+        width: 245px;
+    }
+
+    &__info {
+        width: 245px;
+        &--list {
+        }
+    }
+
+    &__contact {
+        width: 300px;
+        &--list {
+            li {
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    transition: all 300ms ease-in-out;
+                    &:hover,
+                    :focus {
+                        color: var(--button-accent-color);
+                        stroke: var(--button-accent-color);
+                        fill: var(--button-accent-color);
+                    }
+                }
+
+                svg {
+                    width: 22px;
+                }
+            }
+        }
+    }
+
+    &__social {
+        margin-left: 120px;
+
+        ul {
+            flex-direction: row;
+            width: 193px;
+
+            li {
+                height: min-content;
+            }
+            a {
+                width: 22px;
+                height: 22px;
+                transition: all 300ms ease-in-out;
+
+                &:hover,
+                :focus {
+                    color: var(--button-accent-color);
+                    stroke: var(--button-accent-color);
+                    fill: var(--button-accent-color);
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0;
+        line-height: 183%;
+        color: rgba(200, 200, 200, 0.5);
+
+        &::before {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150;
+            width: 1440px;
+            height: 1px;
+            background-color: var(--bg-color);
+            opacity: 0.1;
+        }
+    }
+}
