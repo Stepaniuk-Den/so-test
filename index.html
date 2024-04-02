@@ -174,20 +174,49 @@
                     <div>
                         <form class="contacts__form" action="">
                             <input type="text" placeholder="Имя" />
-                            <input type="email" placeholder="Номер телефона*" />
-                            <input type="tel" placeholder="E-mail*" />
+                            <div class="input-container">
+                                <input
+                                    type="tel"
+                                    id="telInput"
+                                    class="required-input"
+                                    required="true"
+                                />
+                                <label class="placeholder-label" for="telInput"
+                                    >Номер телефона<span>*</span></label
+                                >
+                            </div>
+                            <div class="input-container">
+                                <input
+                                    type="email"
+                                    id="emailInput"
+                                    class="required-input"
+                                    required="true"
+                                />
+                                <label
+                                    class="placeholder-label"
+                                    for="emailInput"
+                                    >E-mail<span>*</span></label
+                                >
+                            </div>
+
                             <input
                                 type="text"
                                 placeholder="Интересующий товар/услуга"
                             />
                             <div class="textarea-wrapper">
                                 <textarea
-                                    name=""
-                                    id=""
+                                    name="textarea"
+                                    id="textarea"
                                     cols="30"
-                                    placeholder="Сообщение*"
+                                    class="required-input"
+                                    required="true"
                                 ></textarea>
-                                <span>
+                                <label
+                                    class="placeholder-label-textarea"
+                                    for="textarea"
+                                    >Сообщение<span>*</span></label
+                                >
+                                <span class="textarea-check">
                                     <svg width="13" height="13">
                                         <use
                                             xlink:href="./src/img/icons.svg#checked"
@@ -312,6 +341,11 @@
                 © 2019 Digital Project. Все права защищены.
             </p>
         </footer>
+        <a href="#up" class="scroll-up">
+            <svg class="up-icon" width="24" height="24" aria-label="scroll up">
+                <use xlink:href="./src/img/icons.svg#arrow-up"></use>
+            </svg>
+        </a>
         <script type="module" src="./src/js/main.js"></script>
     </body>
 </html>

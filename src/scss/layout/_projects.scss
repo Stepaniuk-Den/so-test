@@ -27,10 +27,8 @@
         &:hover,
         :focus {
             background-color: var(--button-accent-color);
-            // color: var(--bg-color);
 
             svg {
-                // stroke: var(--bg-color);
                 scale: 2;
                 transform: translateX(5px);
             }
