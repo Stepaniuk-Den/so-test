@@ -3,6 +3,13 @@
     flex-direction: column;
     margin-top: 120px;
 
+    h2 {
+        @include xxl {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: row;

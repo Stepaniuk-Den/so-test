@@ -8,6 +8,10 @@
         align-items: flex-start;
         gap: 90px;
 
+        @include xl {
+            gap: 80px;
+        }
+
         &--count {
             p {
                 display: flex;
@@ -83,6 +87,10 @@
             flex-wrap: wrap;
             margin-top: 336px;
 
+            @include xl {
+                margin-top: 230px;
+            }
+
             span {
                 font-family: 'TTHoves 300', sans-serif;
                 color: var(--other-text-color);
@@ -92,9 +100,18 @@
 
     .hero__image {
         position: relative;
-        width: 770px;
+        max-width: 770px;
+
+        // @include xxl {
+        //     width: 570px;
+        // }
+        // @include xl {
+        //     width: 450px;
+        // }
+
         &--wrapper {
             width: 100%;
+            overflow: hidden;
         }
         button {
             position: absolute;

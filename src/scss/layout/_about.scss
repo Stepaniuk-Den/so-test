@@ -9,6 +9,15 @@
 
         padding: 30px 70px 30px 100px;
         background: #fbfbfb;
+
+        @include xxl {
+            max-width: $xl;
+            padding: 20px;
+        }
+
+        @include xl {
+            max-width: $lg;
+        }
     }
 
     &__images {
@@ -21,16 +30,30 @@
         .about-1 {
             width: 270px;
             height: 265px;
+
+            @include xl {
+                width: 216px;
+                height: 212px;
+            }
         }
         .about-2 {
             width: 270px;
             height: 345px;
+            @include xl {
+                width: 216px;
+                height: 276px;
+            }
         }
         .about-3 {
             position: relative;
             transform: translateY(-80px);
             width: 270px;
             height: 140px;
+
+            @include xl {
+                width: 216px;
+                height: 112px;
+            }
         }
     }
 

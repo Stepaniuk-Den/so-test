@@ -5,6 +5,13 @@
 
     gap: 60px;
 
+    h2 {
+        @include xxl {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
     &__list {
         display: flex;
         flex-direction: row;
@@ -22,6 +29,9 @@
             font-size: 22px;
             line-height: 164%;
             color: #333;
+            @include xxl {
+                font-size: 18px;
+            }
 
             span {
                 font-family: 'TTHoves 900', sans-serif;
