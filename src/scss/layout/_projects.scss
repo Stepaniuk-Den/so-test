@@ -6,21 +6,12 @@
     &__slider {
         @include lg {
             position: relative;
-            width: 580px;
-            height: 265px;
+            width: 570px;
+            height: 255px;
             overflow: hidden;
-            border: 5px solid var(--button-accent-color);
             margin-left: auto;
             margin-right: auto;
         }
-        // &.middle {
-        //     @include lg {
-        //         position: absolute;
-        //         top: 50%;
-        //         left: 50%;
-        //         transform: translate(-50%, -50%);
-        //     }
-        // }
     }
 
     .navigation {
@@ -55,6 +46,7 @@
         @include xxl {
             margin-right: auto;
             margin-left: auto;
+            margin-bottom: 30px;
         }
     }
 
@@ -110,11 +102,11 @@
             justify-content: center;
         }
         @include lg {
-            width: 500%;
-            height: 100%;
-            display: flex;
+            width: calc(570px + 570px + 270px + 370px + 470px);
+            height: 255px;
             flex-wrap: nowrap;
             margin-top: 0;
+            gap: 0;
         }
 
         input[name='r'] {
@@ -122,19 +114,18 @@
             visibility: hidden;
         }
         &--wrapper {
-            // width: 570px;
-            height: 255px;
-
             @include lg {
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                width: 25%;
+                width: 570px;
                 transition: all 600ms ease-in-out;
                 object-fit: cover;
+
                 img {
-                    width: 100%;
-                    height: 100%;
+                    max-width: none;
+                    width: auto;
                 }
             }
 
@@ -161,14 +152,14 @@
     margin-left: 0;
 }
 #r2:checked ~ .s1 {
-    margin-left: -20%;
+    margin-left: -570px;
 }
 #r3:checked ~ .s1 {
-    margin-left: -40%;
+    margin-left: -1685px;
 }
 #r4:checked ~ .s1 {
-    margin-left: -60%;
+    margin-left: -2830px;
 }
 #r5:checked ~ .s1 {
-    margin-left: -80%;
+    margin-left: -3970px;
 }
