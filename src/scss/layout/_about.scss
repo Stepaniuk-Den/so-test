@@ -18,6 +18,10 @@
         @include xl {
             max-width: $lg;
         }
+
+        @include lg {
+            max-width: $md;
+        }
     }
 
     &__images {
@@ -27,6 +31,11 @@
         gap: 30px;
         flex-grow: 1;
 
+        @include lg {
+            justify-content: center;
+            align-items: center;
+        }
+
         .about-1 {
             width: 270px;
             height: 265px;
@@ -34,6 +43,9 @@
             @include xl {
                 width: 216px;
                 height: 212px;
+            }
+            @include lg {
+                display: none;
             }
         }
         .about-2 {
@@ -53,6 +65,9 @@
             @include xl {
                 width: 216px;
                 height: 112px;
+            }
+            @include lg {
+                display: none;
             }
         }
     }

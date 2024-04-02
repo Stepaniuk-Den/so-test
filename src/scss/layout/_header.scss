@@ -35,18 +35,19 @@
             @include xl {
                 gap: 38px;
             }
+            @include lg {
+                gap: 20px;
+            }
 
             a {
                 transition: all 300ms ease-in-out;
-                &:hover,
-                :focus {
+                &:hover {
                     color: var(--button-accent-color);
                 }
             }
 
             .js-header-nav-active {
                 position: relative;
-                color: var(--button-accent-color);
                 &::before {
                     display: block;
                     content: '';
