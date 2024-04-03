@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "posthtml-include": "^1.7.4",
     "process": "^0.11.10",
     "sass": "^1.72.0",
     "vite": "^5.2.0"
