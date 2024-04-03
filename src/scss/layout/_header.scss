@@ -17,8 +17,22 @@
         align-items: center;
         margin-left: 330px;
 
+        .burger--btn {
+            display: none;
+            @include md {
+                display: flex;
+            }
+        }
         @include xl {
             margin-left: auto;
+        }
+        @include md {
+            position: relative;
+
+            .burger--btn.hidden,
+            .header__nav--list.hidden {
+                display: none;
+            }
         }
 
         &--list {
@@ -37,6 +51,15 @@
             }
             @include lg {
                 gap: 20px;
+            }
+            @include md {
+                position: absolute;
+                top: 50px;
+                right: 0;
+                flex-direction: column;
+                z-index: 10;
+                background: var(--bg-color);
+                padding: 20px;
             }
 
             a {

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="icon" type="image/svg+xml" href="/dp-logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Smart Orange</title>
         <link
@@ -26,7 +26,12 @@
                 </div>
             </a>
             <nav class="header__nav">
-                <ul class="header__nav--list">
+                <button class="burger--btn" id="burger--btn">
+                    <svg width="24" height="24">
+                        <use xlink:href="./src/img/icons.svg#burger"></use>
+                    </svg>
+                </button>
+                <ul class="header__nav--list hidden" id="header__nav--list">
                     <li>
                         <a class="js-header-nav-active" href="./index.html"
                             >ГЛАВНАЯ</a
@@ -152,30 +157,85 @@
                         <input type="radio" name="r" id="r4" />
                         <input type="radio" name="r" id="r5" />
                         <div class="projects__images--wrapper project-1 s1">
+                            <div class="images--descr">
+                                <h3>ДОСУГОВЫЙ ЦЕНТР</h3>
+                                <button class="descr__btn">
+                                    ПОДРОБНЕЕ
+                                    <svg width="18" height="18">
+                                        <use
+                                            xlink:href="./src/img/icons.svg#arrow-right"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
                             <img
                                 src="./src/img/project-1.png"
                                 alt="project-1"
                             />
                         </div>
                         <div class="projects__images--wrapper project-2">
+                            <div class="images--descr">
+                                <h3>LOREM</h3>
+                                <button class="descr__btn">
+                                    ПОДРОБНЕЕ
+                                    <svg width="18" height="18">
+                                        <use
+                                            xlink:href="./src/img/icons.svg#arrow-right"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
                             <img
                                 src="./src/img/project-2.png"
                                 alt="project-2"
                             />
                         </div>
                         <div class="projects__images--wrapper project-3">
+                            <div class="images--descr">
+                                <h3>LOR</h3>
+                                <button class="descr__btn">
+                                    ПОДРОБНЕЕ
+                                    <svg width="18" height="18">
+                                        <use
+                                            xlink:href="./src/img/icons.svg#arrow-right"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
                             <img
                                 src="./src/img/project-3.png"
                                 alt="project-3"
                             />
                         </div>
                         <div class="projects__images--wrapper project-4">
+                            <div class="images--descr">
+                                <h3>LOREM</h3>
+                                <button class="descr__btn">
+                                    ПОДРОБНЕЕ
+                                    <svg width="18" height="18">
+                                        <use
+                                            xlink:href="./src/img/icons.svg#arrow-right"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
                             <img
                                 src="./src/img/project-4.png"
                                 alt="project-4"
                             />
                         </div>
                         <div class="projects__images--wrapper project-5">
+                            <div class="images--descr">
+                                <h3>LOREM</h3>
+                                <button class="descr__btn">
+                                    ПОДРОБНЕЕ
+                                    <svg width="18" height="18">
+                                        <use
+                                            xlink:href="./src/img/icons.svg#arrow-right"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
                             <img
                                 src="./src/img/project-5.png"
                                 alt="project-5"
@@ -190,7 +250,7 @@
                         <label for="r5" class="bar"></label>
                     </div>
                 </div>
-                <button>
+                <button class="projects__btn">
                     ВСЕ ПРОЕКТЫ
                     <svg width="18" height="18">
                         <use xlink:href="./src/img/icons.svg#arrow-right"></use>

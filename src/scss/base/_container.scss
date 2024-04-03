@@ -12,6 +12,15 @@
         font-size: 64px;
         line-height: 100%;
         color: var(--other-text-color);
+
+        @include sm {
+            font-size: 48px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
     }
     @include xxl {
         max-width: $xl;

@@ -2,6 +2,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include sm {
+        flex-direction: column-reverse;
+    }
     .hero__title {
         display: flex;
         flex-direction: column;
@@ -13,6 +17,9 @@
         }
         @include lg {
             gap: 40px;
+        }
+        @include sm {
+            align-items: center;
         }
 
         &--count {
@@ -38,6 +45,10 @@
             flex-direction: row;
             align-items: center;
             width: 100%;
+
+            @include sm {
+                justify-content: center;
+            }
 
             button {
                 width: 52px;
@@ -81,6 +92,10 @@
                 @include lg {
                     width: 172px;
                 }
+
+                @include sm {
+                    display: none;
+                }
             }
         }
 
@@ -102,6 +117,10 @@
                 font-size: 48px;
             }
 
+            @include sm {
+                justify-content: center;
+                margin-top: 100px;
+            }
             span {
                 font-family: 'TTHoves 300', sans-serif;
                 color: var(--other-text-color);
@@ -112,13 +131,6 @@
     .hero__image {
         position: relative;
         max-width: 770px;
-
-        // @include xxl {
-        //     width: 570px;
-        // }
-        // @include xl {
-        //     width: 450px;
-        // }
 
         &--wrapper {
             width: 100%;

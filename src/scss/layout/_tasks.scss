@@ -4,6 +4,11 @@
     margin-top: 150px;
     gap: 60px;
 
+    @include sm {
+        margin-top: 100px;
+        gap: 30px;
+    }
+
     h2 {
         @include xxl {
             margin-right: auto;
@@ -39,10 +44,6 @@
             &--item-1 {
                 p {
                     width: 279px;
-
-                    @include lg {
-                        // width: 100%;
-                    }
                 }
             }
 
@@ -64,12 +65,20 @@
                     font-size: 160px;
                     width: 100px;
                 }
+                @include sm {
+                    font-size: 150px;
+                    width: 100px;
+                }
             }
         }
 
         p {
             @include lg {
                 width: 80%;
+            }
+            @include sm {
+                font-size: 16px;
+                line-height: 140%;
             }
         }
     }

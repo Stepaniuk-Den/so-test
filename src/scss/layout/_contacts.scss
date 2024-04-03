@@ -15,6 +15,11 @@
         flex-direction: row;
         gap: 30px;
         margin-top: 22px;
+
+        @include lg {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 
     &__form {
@@ -22,6 +27,11 @@
         flex-direction: column;
         width: 391px;
         gap: 10px;
+
+        @include lg {
+            width: 100%;
+            align-items: center;
+        }
 
         input {
             width: 100%;
@@ -32,6 +42,10 @@
         }
         .input-container {
             position: relative;
+
+            @include lg {
+                width: 100%;
+            }
         }
 
         .placeholder-label {
@@ -118,6 +132,10 @@
             letter-spacing: 0.03em;
             line-height: 100%;
             color: #333;
+
+            @include lg {
+                margin: 30px 0;
+            }
         }
 
         button {
