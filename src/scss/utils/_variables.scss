@@ -10,8 +10,21 @@
     --other-text-color: #bdbdbd;
 
     --footer-bg-color: #2c2c2c;
+    --all: all 300ms ease-in-out;
 }
 
-$mobile: 375px;
-$tablet: 768px;
-$desktop: 1440px;
+@mixin button-with-arrow {
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 221px;
+        height: 71px;
+        gap: 12px;
+        transition: var(--all);
+        &:active {
+            scale: 0.9;
+        }
+        @content;
+    }
+}

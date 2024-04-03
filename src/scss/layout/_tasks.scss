@@ -41,12 +41,6 @@
             line-height: 164%;
             color: #333;
 
-            &--item-1 {
-                p {
-                    width: 279px;
-                }
-            }
-
             @include xxl {
                 font-size: 18px;
             }
@@ -67,7 +61,6 @@
                 }
                 @include sm {
                     font-size: 150px;
-                    width: 100px;
                 }
             }
         }

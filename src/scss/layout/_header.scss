@@ -63,7 +63,7 @@
             }
 
             a {
-                transition: all 300ms ease-in-out;
+                transition: var(--all);
                 &:hover {
                     color: var(--button-accent-color);
                 }

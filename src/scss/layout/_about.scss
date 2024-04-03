@@ -90,20 +90,10 @@
                 width: 100%;
             }
         }
-        button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 221px;
-            height: 71px;
-            gap: 12px;
+
+        @include button-with-arrow {
             background: var(--bg-color);
             color: var(--primary-color);
-            transition: all 300ms ease-in-out;
-
-            &:active {
-                scale: 0.9;
-            }
 
             &:hover,
             :focus {
@@ -117,7 +107,7 @@
                 }
             }
             svg {
-                transition: all 300ms ease-in-out;
+                transition: var(--all);
                 stroke: var(--primary-color);
             }
         }
